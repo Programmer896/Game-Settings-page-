@@ -1,0 +1,58 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Settings</title>
+    <link rel="stylesheet" href="styleset.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Game Settings</h1>
+        </header>
+        
+        <section class="settings">
+            <div class="setting-group">
+                <h2>Audio Settings</h2>
+                <label for="music-volume">Music Volume</label>
+                <input type="range" id="music-volume" name="music-volume" min="0" max="100">
+                
+                <label for="sfx-volume">SFX Volume</label>
+                <input type="range" id="sfx-volume" name="sfx-volume" min="0" max="100">
+                
+                <label for="voice-volume">Voice Volume</label>
+                <input type="range" id="voice-volume" name="voice-volume" min="0" max="100">
+            </div>
+            
+            <div class="setting-group">
+                <h2>Video Settings</h2>
+                <label for="resolution">Resolution</label>
+                <select id="resolution" name="resolution">
+                    <option value="1920x1080">1920x1080</option>
+                    <option value="1280x720">1280x720</option>
+                    <option value="1024x768">1024x768</option>
+                </select>
+                
+                <label for="fullscreen">Fullscreen</label>
+                <input type="checkbox" id="fullscreen" name="fullscreen">
+            </div>
+            
+            <div class="setting-group">
+                <h2>Control Settings</h2>
+                <label for="sensitivity">Mouse Sensitivity</label>
+                <input type="range" id="sensitivity" name="sensitivity" min="1" max="10">
+                
+                <label for="key-bindings">Key Bindings</label>
+                <button id="key-bindings" onclick="openKeyBindings()">Configure</button>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        function openKeyBindings() {
+            alert('Key bindings configuration coming soon!');
+        }
+    </script>
+</body>
+</html>
